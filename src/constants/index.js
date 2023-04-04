@@ -100,7 +100,7 @@ import {
   const experiences = [
     {
       title: "Frontend Developer (education)",
-      company_name: "Yandex Pracicum",
+      company_name: "Yandex.Practicum",
       icon: yandex,
       iconBg: "#383E56",
       date: "January 2022 - December 2022",
