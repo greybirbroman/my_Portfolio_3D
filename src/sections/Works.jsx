@@ -1,6 +1,6 @@
 import { ProjectCard, SectionTitle, SectionText } from '../components';
 import { SectionWrapper } from '../hoc';
-import { projects } from '../constants';
+import { projects } from '../utils/constants';
 
 const sectionText = {
   title: `Projects.`,

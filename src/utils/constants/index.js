@@ -23,7 +23,7 @@ import {
   business,
   achievment,
   achievment2
-} from '../assets';
+} from '../../assets';
 
 
 export const navLinks = [

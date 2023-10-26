@@ -1,6 +1,6 @@
 import { VerticalTimeline } from 'react-vertical-timeline-component';
 import { ExperienceCard, SectionTitle, SectionText, AchievmentCard } from '../components';
-import { experiences, achievements } from '../constants';
+import { experiences, achievements } from '../utils/constants';
 import { SectionWrapper } from '../hoc';
 
 const sectionText = {

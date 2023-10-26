@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { Tilt } from 'react-tilt';
 import { motion as m } from 'framer-motion';
 import { github, deploy } from '../assets';
@@ -38,16 +37,16 @@ const ProjectCard = ({
           </div>
         </div>
         <div className='mt-5'>
-          <h3 className='text-white forn-bold text-[24px]'>{name}</h3>
+          <h4 className='text-white forn-bold text-[24px]'>{name}</h4>
           <p className='mt-2 text-secondary text-[14px]'>{description}</p>
         </div>
-        <div className='mt-4 flex flex-wrap gap-2'>
+        <ul className='mt-4 flex flex-wrap gap-2'>
           {tags.map((tag) => (
-            <p key={tag.name} className={`text-[14px] ${tag.color}`}>
+            <li key={tag.name} className={`text-[14px] ${tag.color}`}>
               #{tag.name}
-            </p>
+            </li>
           ))}
-        </div>
+        </ul>
       </Tilt>
     </m.div>
   );

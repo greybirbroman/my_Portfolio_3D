@@ -19,7 +19,7 @@ const ExperienceCard = ({ experience }) => {
       }
     >
       <div>
-        <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
+        <h4 className='text-white text-[24px] font-bold'>{experience.title}</h4>
         <p className='text-secondary text-sm font-semibold'>
           {experience.company_name}
         </p>

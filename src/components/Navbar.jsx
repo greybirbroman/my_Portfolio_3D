@@ -1,5 +1,4 @@
-import React from 'react';
-import { navLinks } from '../constants';
+import { navLinks } from '../utils/constants';
 import { BurgerMenuButton } from './';
 import useNavbar from '../utils/hooks/useNavbar';
 import { motion as m } from 'framer-motion';

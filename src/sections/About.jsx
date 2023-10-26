@@ -2,7 +2,7 @@ import React from 'react';
 import { SectionWrapper } from '../hoc';
 import { SectionTitle, SectionText, ServiceCard } from '../components';
 import { TechList } from '../components';
-import { services } from '../constants';
+import { services } from '../utils/constants';
 
 const myGithubLink = 'https://github.com/greybirbroman';
 
