@@ -1,11 +1,8 @@
 import logo from "./logo_transparent.svg";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import deploy from './web_icon.png'
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -24,11 +21,25 @@ import threejs from "./tech/threejs.svg";
 import yandex from './company/yandex.png';
 import home from './company/home.png';
 
+// CARDS
+import backend from "./cards/backend.png";
+import creator from "./cards/creator.png";
+import mobile from "./cards/mobile.png";
+import web from "./cards/web.png";
 
-import myYoutube from "./my_youtube.png";
-import myDalle from "./my_dalle.png";
-import moviesExplorer from "./moviesExplorer.png";
-import mesto from './mesto.png';
+
+// PROJECTS
+import myYoutube from "./projects/my_youtube.webp";
+import myDalle from "./projects/my_dalle.webp";
+import moviesExplorer from "./projects/moviesExplorer.webp";
+import nike from './projects/nike_landing.webp'
+import metaversus from './projects/metaversus.webp'
+import business from './projects/business_card.webp'
+import rent from './projects/car_rent.webp'
+
+// ACHIEVMENTS
+import achievment from './achievments/achievement.png'
+import achievment2 from './achievments/achievment2.jpg'
 
 export {
   logo,
@@ -57,5 +68,11 @@ export {
   myYoutube,
   myDalle,
   moviesExplorer,
-  mesto
+  nike,
+  metaversus,
+  business,
+  rent,
+  deploy,
+  achievment,
+  achievment2
 };

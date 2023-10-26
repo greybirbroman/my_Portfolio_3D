@@ -15,6 +15,20 @@ export const textVariant = (delay) => {
       },
     };
   };
+
+export const titleVariants = {
+  initial: {
+    x: -100,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.75,
+    }
+  }
+}
   
   export const fadeIn = (direction, type, delay, duration) => {
     return {
@@ -70,6 +84,7 @@ export const textVariant = (delay) => {
           delay: delay,
           duration: duration,
           ease: "easeOut",
+          staggerChildren: 0.1
         },
       },
     };
@@ -85,4 +100,48 @@ export const textVariant = (delay) => {
         },
       },
     };
+  };
+
+  export const sidebarVariants = {
+    open: {
+        clipPath: "circle(1200px at -40px -40px)",
+        transition: {
+            type: 'spring',
+            stiffness: 20,
+        }
+    },
+    closed: {
+        clipPath: "circle(30px at -40px -40px)",
+        transition: {
+            delay: 0.5,
+            type: 'spring',
+            stiffness: 400,
+            damping: 40
+        }
+    },
+  };
+
+  export const sidebarListItemVariants = {
+    open: {
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+    closed: {
+      transition: {
+        staggerChildren: 0.05,
+        staggerDirection: -1,
+      },
+    },
+  };
+
+  export const sidebarItemVariants = {
+    open: {
+      y: 0,
+      opacity: 1,
+    },
+    closed: {
+      y: -50,
+      opacity: 0,
+    },
   };

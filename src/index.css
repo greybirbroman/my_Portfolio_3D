@@ -1,22 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #0c0c1d;
+  }
+}
+
+@layer utilities {
+  .gradient-from-dark {
+    @apply bg-gradient-to-b from-[#0c0c1d] to-[#111132];
+  }
+  .gradient-from-light {
+    @apply bg-gradient-to-b from-[#111132] to-[#0c0c1d];
+  }
+  .gradient-scroll {
+    @apply bg-gradient-to-r from-purple-500 to-white;
+  }
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-white;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
   color-scheme: dark;
+}
+section {
+  min-height: calc(100vh - 90px);
+  scroll-snap-align: center;
 }
 
 .hash-span {
-  margin-top: -100px;
-  padding-bottom: 100px;
+  /* margin-top: 90px; */
+  /* padding-bottom: 100px; */
   display: block;
 }
 
@@ -45,7 +73,7 @@
 }
 
 .green-pink-gradient {
-  background: "#00cea8";
+  background: '#00cea8';
   background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
   background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
 }

@@ -19,7 +19,11 @@ module.exports = {
         xs: "450px",
       },
       backgroundImage: {
-        "hero-pattern": "url('/src/assets/herobg.png')",
+        "hero-pattern": "url('/src/assets/herobg.webp')",
+        "mountains": "url('/src/assets/parallax/mountains.png')",
+        "planets": "url('/src/assets/parallax/planets.png')",
+        "sun": "url('/src/assets/parallax/sun.png')",
+        "stars": "url('/src/assets/parallax/stars.png')",
       },
     },
   },

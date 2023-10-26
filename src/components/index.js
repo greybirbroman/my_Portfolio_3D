@@ -1,24 +1,36 @@
 import { EarthCanvas, BallCanvas, ComputersCanvas, StarsCanvas } from './canvas';
-import Hero from './Hero';
+import Hero from '../sections/Hero';
 import Navbar from './Navbar';
-import About from './About';
-import Tech from './Tech';
-import Experience from './Experience';
-import Works from './Works';
-import Feedbacks from './Feedbacks';
-import Contact from './Contact';
+import SectionTitle from './SectionTitle';
+import SectionText from './SectionText';
+import ServiceCard from './ServiceCard';
+import ExperienceCard from './ExperienceCard';
+import AchievmentCard from './AchivmentCard';
+import ProjectCard from './ProjectCard';
+import BurgerMenuButton from './BurgerMenuButton';
+import Header from './Header';
+import Logo from './Logo';
+import TechList from './TechList';
+import MotionScroll from './MotionScroll';
+import CustomLink from './CustomLink';
 
 export {
   Hero,
   Navbar,
-  About,
-  Tech,
-  Experience,
-  Works,
-  Feedbacks,
-  Contact,
   EarthCanvas, 
   BallCanvas, 
   ComputersCanvas, 
-  StarsCanvas
+  StarsCanvas,
+  SectionTitle,
+  SectionText,
+  ServiceCard,
+  ExperienceCard,
+  AchievmentCard,
+  ProjectCard,
+  BurgerMenuButton,
+  Header,
+  Logo,
+  TechList,
+  MotionScroll,
+  CustomLink
 }

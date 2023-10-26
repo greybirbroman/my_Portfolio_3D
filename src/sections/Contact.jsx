@@ -1,58 +1,14 @@
-import { useState, useRef } from 'react';
-import { motion as m } from 'framer-motion';
-import emailjs from '@emailjs/browser';
 import { styles } from '../styles';
-import { EarthCanvas } from './canvas';
+import { motion as m } from 'framer-motion';
+import { EarthCanvas } from '../components/canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
+import useForm from '../utils/hooks/useForm';
 
 const Contact = () => {
-  const formRef = useRef();
-  const [form, setForm] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
-  const [loading, setLoading] = useState(false);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setForm({ ...form, [name]: value });
-  };
-
-  // template_seua6my
-  // service_ij8toc8
-  // NYpk4-keWC88Girq6
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
-
-    emailjs.send(
-     'service_ij8toc8',
-     'template_seua6my', {
-      from_name: form.name,
-      to_name: 'Roman',
-      from_email: form.email,
-      to_email: 'rfedorov.work@gmail.com',
-      message: form.message,
-    },
-    'NYpk4-keWC88Girq6'
-    )
-    .then(() => {
-      setLoading(false)
-      alert('Спасибо! Я отвечу вам, как только смогу!')
-
-      setForm({
-        name: '',
-        email: '',
-        message: '',
-      })
-    }, (error) => {
-      setLoading(false)
-      console.log(error)
-      alert('Что-то пошло не так... Попробуйте еще раз.')
-    })
-  };
+  
+  const { formRef, form, loading, handleChange, handleSubmit, disabledButton } =
+    useForm();
 
   return (
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
@@ -102,7 +58,8 @@ const Contact = () => {
           </label>
           <button
             type='submit'
-            className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl'
+            className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl disabled:opacity-50'
+            disabled={disabledButton}
           >
             {loading ? 'Sending...' : 'Send'}
           </button>

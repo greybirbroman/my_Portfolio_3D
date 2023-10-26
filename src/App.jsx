@@ -1,27 +1,31 @@
-import React from 'react'
+import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from './components'
+import { About, Contact, Experience, Hero, Works, Parallax } from './sections';
+import { Header, StarsCanvas, MotionScroll } from './components';
+import useMotionScroll from './utils/hooks/useMotionScroll';
 
 const App = () => {
+  const { ref, scaleX } = useMotionScroll();
   return (
     <BrowserRouter>
-      <div className='relative z-0 bg-primary'>
+      <div ref={ref} className='relative z-0 bg-primary'>
         <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
-            <Navbar />
-            <Hero />
+          <MotionScroll style={{ scaleX }}/>
+          <Header />
+          <Hero />
         </div>
+        <Parallax title='What About Me?' />
         <About />
         <Experience />
-        <Tech />
+        <Parallax title='What About My Works?' type='sun' />
         <Works />
         <div className='relative z-0'>
-            <Contact />
-            <StarsCanvas />
+          <Contact />
+          <StarsCanvas />
         </div>
       </div>
-
     </BrowserRouter>
-  )
-}
+  );
+};
 
-export default App
+export default App;

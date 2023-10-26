@@ -1,7 +1,7 @@
 import React from 'react';
 import { styles } from '../styles';
 import { motion as m } from 'framer-motion';
-import { ComputersCanvas } from './canvas';
+import { ComputersCanvas } from '../components/canvas';
 
 const Hero = () => {
   return (
@@ -15,10 +15,10 @@ const Hero = () => {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText}`}>
-            Hi, I'm <span className='text-[#915eff]'>Roman</span>
+            Hi, I'm <span className='gradient-text'>Roman</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Я разрабатываю пользовательские интерфейсы <br className='sm:block hidden' /> и web приложения
+          <p className={`${styles.heroSubText} mt-2 text-white-100 uppercase tracking-wider`}>
+            Frontend Developer <br className='sm:block hidden' />&{' '}this.<span className='text-[#915eff]'>myPortfolio</span>
           </p>
         </div>
       </div>
