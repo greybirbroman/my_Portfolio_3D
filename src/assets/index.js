@@ -36,6 +36,7 @@ import nike from './projects/nike_landing.webp'
 import metaversus from './projects/metaversus.webp'
 import business from './projects/business_card.webp'
 import rent from './projects/car_rent.webp'
+import evently from './projects/evently.webp'
 
 // ACHIEVMENTS
 import achievment from './achievments/achievement.png'
@@ -73,6 +74,7 @@ export {
   business,
   rent,
   deploy,
+  evently,
   achievment,
   achievment2
 };

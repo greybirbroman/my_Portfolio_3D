@@ -20,11 +20,11 @@ import {
   typescript,
   metaversus,
   rent,
+  evently,
   business,
   achievment,
-  achievment2
+  achievment2,
 } from '../../assets';
-
 
 export const navLinks = [
   {
@@ -33,7 +33,7 @@ export const navLinks = [
   },
   {
     id: '#experience',
-    title: 'Experience'
+    title: 'Experience',
   },
   {
     id: '#work',
@@ -158,6 +158,34 @@ const testimonials = [
 
 const projects = [
   {
+    name: 'Evently | CRUD, Auth',
+    description: 'Проект - платформа создания, поиска, организации событий.',
+    tags: [
+      {
+        name: 'nextjs',
+        color: '',
+      },
+      {
+        name: 'typescript',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'mongodb',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'stripe',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'clerk',
+        color: 'orange-text-gradient',
+      },
+    ],
+    image: evently,
+    source_code_link: 'https://github.com/greybirbroman/evently',
+  },
+  {
     name: 'Business Card',
     description: 'Интерактивная страница - визитка врача стоматолога',
     tags: [
@@ -180,7 +208,7 @@ const projects = [
     ],
     image: business,
     source_code_link: 'https://github.com/greybirbroman/dr_nekrashevich_next',
-    deploy_link: 'https://msnek.ru/'
+    deploy_link: 'https://msnek.ru/',
   },
   {
     name: 'Metaversus web 3.0',
@@ -202,7 +230,7 @@ const projects = [
     ],
     image: metaversus,
     source_code_link: 'https://github.com/greybirbroman/metaversus',
-    deploy_link: 'https://metaversus-green-seven.vercel.app/'
+    deploy_link: 'https://metaversus-green-seven.vercel.app/',
   },
   {
     name: 'Nike Landing',
@@ -224,7 +252,7 @@ const projects = [
     ],
     image: nike,
     source_code_link: 'https://github.com/greybirbroman/nike_landing',
-    deploy_link: 'https://nike-landing-sepia.vercel.app/'
+    deploy_link: 'https://nike-landing-sepia.vercel.app/',
   },
   {
     name: 'Car Rent',
@@ -246,7 +274,7 @@ const projects = [
     ],
     image: rent,
     source_code_link: 'https://github.com/greybirbroman/car_rent_ts',
-    deploy_link: 'https://car-rent-ts-one.vercel.app/'
+    deploy_link: 'https://car-rent-ts-one.vercel.app/',
   },
   {
     name: 'My YouTube Clone',
@@ -299,7 +327,7 @@ const projects = [
     image: myDalle,
     source_code_link:
       'https://github.com/greybirbroman/my_dalle_clone/tree/main/frontend',
-    deploy_link: 'https://romansdalle.netlify.app/'
+    deploy_link: 'https://romansdalle.netlify.app/',
   },
   {
     name: 'Movies Explorer (MERN)',
@@ -333,13 +361,20 @@ const achievements = [
   {
     id: 1,
     name: 'Благодарственное письмо',
-    image: achievment
+    image: achievment,
   },
   {
     id: 2,
     name: 'Сертификат',
-    image: achievment2
-  }
-]
+    image: achievment2,
+  },
+];
 
-export { services, technologies, experiences, testimonials, projects, achievements };
+export {
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+  achievements,
+};
