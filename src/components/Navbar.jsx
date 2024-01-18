@@ -22,7 +22,7 @@ const Navbar = () => {
           key={item.id}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
-          className='text-xl sm:text-5xl'
+          className="text-xl sm:text-5xl"
         >
           <a href={item.id}>{item.title}</a>
         </m.li>
@@ -35,11 +35,11 @@ const Navbar = () => {
       <m.nav
         ref={ref}
         animate={isOpen ? 'open' : 'closed'}
-        className='bg-white flex flex-col items-center justify-center rounded-full'
+        className="bg-white flex flex-col items-center justify-center rounded-full"
       >
         <m.div
           variants={sidebarVariants}
-          className='fixed top-0 right-0 flex self-end h-full'
+          className="fixed top-0 right-0 flex self-end h-full"
         >
           <Links />
         </m.div>

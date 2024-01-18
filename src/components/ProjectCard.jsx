@@ -21,26 +21,26 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full cursor-default'
+        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full cursor-default"
       >
-        <div className='relative w-full h-[230px]'>
+        <div className="relative w-full h-[230px]">
           <img
             src={image}
             alt={name}
-            className='w-full h-full object-cover rounded-2xl'
+            className="w-full h-full object-cover rounded-2xl"
           />
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover gap-2'>
+          <div className="absolute inset-0 flex justify-end m-3 card-img_hover gap-2">
             <CustomLink href={source_code_link} imgUrl={github} />
             {deploy_link && (
-              <CustomLink href={deploy_link} imgUrl={deploy} variant='white' />
+              <CustomLink href={deploy_link} imgUrl={deploy} variant="white" />
             )}
           </div>
         </div>
-        <div className='mt-5'>
-          <h4 className='text-white forn-bold text-[24px]'>{name}</h4>
-          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+        <div className="mt-5">
+          <h4 className="text-white forn-bold text-[24px]">{name}</h4>
+          <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
-        <ul className='mt-4 flex flex-wrap gap-2'>
+        <ul className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
             <li key={tag.name} className={`text-[14px] ${tag.color}`}>
               #{tag.name}

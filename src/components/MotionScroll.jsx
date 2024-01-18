@@ -4,7 +4,7 @@ const MotionScroll = ({ style }) => {
   return (
     <m.div
       style={style}
-      className='h-[10px] gradient-scroll z-50 fixed w-full'
+      className="h-[10px] gradient-scroll z-50 fixed w-full"
     />
   );
 };

@@ -1,4 +1,9 @@
-import { EarthCanvas, BallCanvas, ComputersCanvas, StarsCanvas } from './canvas';
+import {
+  EarthCanvas,
+  BallCanvas,
+  ComputersCanvas,
+  StarsCanvas,
+} from './canvas';
 import Hero from '../sections/Hero';
 import Navbar from './Navbar';
 import SectionTitle from './SectionTitle';
@@ -17,9 +22,9 @@ import CustomLink from './CustomLink';
 export {
   Hero,
   Navbar,
-  EarthCanvas, 
-  BallCanvas, 
-  ComputersCanvas, 
+  EarthCanvas,
+  BallCanvas,
+  ComputersCanvas,
   StarsCanvas,
   SectionTitle,
   SectionText,
@@ -32,5 +37,5 @@ export {
   Logo,
   TechList,
   MotionScroll,
-  CustomLink
-}
+  CustomLink,
+};
